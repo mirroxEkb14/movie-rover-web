@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rover Abstract</title>
+    <link href="/styles/bot-abstract.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <a th:href="@{/bot-abstract}" class="page-title">Bot Abstract</a>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a th:href="@{/}">Home</a>
+                <a th:href="@{/} + '#footer'">Contacts</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- text -->
+     <section class="home">
+        <video class="video-slide" src="/assets/bot-about-projector.mp4" autoplay muted loop></video>
+        
+        <div class="content">
+            <h1><span class="about-text">About.</span><br><span class="bot-name-text">Movie Rover</span></h1>
+            <p>This bot allows its users to search movies and series by their own preferences, which includes user's mood or movie genre. This feature is called «Smart Search» and consists of several steps during which the bot determines user's preferences and offers the most suitable movies or series. Furthermore, it has other features you will definitely want to try out.</p>
+            <a href="https://t.me/MovieRoverBot" target="_black">Try out</a>
+        </div>
+     </section>
+</body>
+</html>

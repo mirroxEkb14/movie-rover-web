@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rover Updates</title>
+    <link href="/styles/bot-updates.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="page-wrapper">
+        <!-- header -->
+        <header>
+            <a th:href="@{/bot-updates}" class="page-title">Bot Updates</a>
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a th:href="@{/}">Home</a>
+                    <a th:href="@{/} + '#footer'">Contacts</a>
+                    <a href="https://t.me/MovieRoverBot" target="_black">Try</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <section class="home">
+            <div class="content">
+                <!-- 1st row -->
+                <div class="row">
+                    <video src="/assets/updates-smart-search-feature.mp4" alt="video-smart-search" autoplay muted loop></video>
+                    <div class="text">
+                        <h2>'Smart Search' Update</h2>
+                        <div class="date">2024-06-20</div>
+                        <p>This feature allows users to make movie/series selection based on their preferences: mood, catalogue and genre. On each move user can make a step back and reselect previously selected button.</p>
+                    </div>
+                </div>
+                <!-- 2nd row -->
+                <div class="row">
+                    <div class="text">
+                        <h2>'No Idea' Update</h2>
+                        <div class="date">2024-06-22</div>
+                        <p>This feature allows users to see through the entire bot's database, when he is not sure what he is currently wants precisely. Users can move back/forward in the database (previous/next buttons).</p>
+                    </div>
+                    <video src="/assets/updates-no-idea-feature.mp4" alt="video-no-idea" autoplay muted loop></video>
+                </div>
+                <!-- 3rd row -->
+                <div class="row">
+                    <video src="/assets/updates-we-recommend-feature.mp4" alt="video-we-recommend" autoplay muted loop></video>
+                    <div class="text">
+                        <h2>'We Recommend' Update</h2>
+                        <div class="date">2024-06-23</div>
+                        <p>This feature allows users to select a movie from an already made selected by the Developers. The number of movies is always 10 and is changing permanently.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer-distributed" id="footer">
+            <div class="footer-content">
+                <h2 class="footer-title">Word from Developers</h2>
+                <div class="footer-line"></div>
+                <p class="footer-text">It is essential for the Developers to keep the bot's users informed about the latest bot's updates. With the growth of the Project, users will be able to contemplate the New Year updates, Winter/Summer Solstice updates and much more.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

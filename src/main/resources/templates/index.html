@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rover Home</title>
+    <link href="/styles/style.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <a th:href="@{/}">Home</a>
+            <a href="#" id="contacts-link">Contacts</a>
+            <a href="#">
+                <img src="/assets/account-icon.jfif" alt="profile-image" class="profile-image"> Sign up
+            </a>
+        </nav>
+    </header>
+    
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="/assets/home-img1.jpeg">
+                <div class="content">
+                    <div class="bot-name">Movie Rover</div>
+                    <div class="title">Bot Abstract</div>
+                    <div class="topic">ABOUT</div>
+                    <div class="des">
+                        The bot possesses the «Smart Search» feature, which allows its users to make individual movie/series selections based on their preferences.
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-see-more" th:data-path="@{/bot-abstract}">SEE MORE</button>
+                        <button class="btn-try-out">TRY OUT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/home-img2.jpeg">
+                <div class="content">
+                    <div class="bot-name">Movie Rover</div>
+                    <div class="title">Why to Use?</div>
+                    <div class="topic">TELEGRAM</div>
+                    <div class="des">
+                        As Telegram has it on its own website - "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed."
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-see-more"  th:data-path="@{/telegram}">SEE MORE</button>
+                        <button class="btn-try-out">TRY OUT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/home-img3.jpeg">
+                <div class="content">
+                    <div class="bot-name">Movie Rover</div>
+                    <div class="title">Bot Updates</div>
+                    <div class="topic">NEWS</div>
+                    <div class="des">
+                        Bot's most recent updates are about new features, improvements, and bug fixes. The bot is constantly being updated to provide the best user experience. The developers keep bot's users informed about the updates and encourage them to give feedback.
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-see-more" th:data-path="@{/bot-updates}">SEE MORE</button>
+                        <button class="btn-try-out">TRY OUT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/home-img4.jpeg">
+                <div class="content">
+                    <div class="bot-name">Movie Rover</div>
+                    <div class="title">Sound Criticism</div>
+                    <div class="topic">FEEDBACK</div>
+                    <div class="des">
+                        Feedback is an essntial part of the bot's development. It helps the developers to understand what users like and dislike about the bot, what features they want to see, and what improvements they suggest.
+                    </div>
+                    <div class="buttons">
+                        <button class="btn-see-more" th:data-path="@{/bot-feedback}">SEE MORE</button>
+                        <button class="btn-try-out">TRY OUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="/assets/home-img1.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Bot Abstract
+                    </div>
+                    <div class="description">
+                        The bot's most important goal is...
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/home-img2.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Why Telegram?
+                    </div>
+                    <div class="description">
+                        Simple, Private, Secure, Social, ...
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/home-img3.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Updates
+                    </div>
+                    <div class="description">
+                        News about recent updates frequently...
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/assets/home-img4.jpeg">
+                <div class="content">
+                    <div class="title">
+                        Feedback
+                    </div>
+                    <div class="description">
+                        You can always express...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- next prev -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-distributed" id="footer">
+        <div class="footer-left">
+            <img src="/assets/movie-rover_web-logo.png" alt="web-logo">
+            <p class="footer-links">
+                <a th:href="@{/}">Home</a>
+                <a th:href="@{/bot-abstract}">About</a>
+                <a th:href="@{/telegram}">Telegram</a>
+                <a th:href="@{/bot-updates}">Updates</a>
+                <a th:href="@{/bot-feedback}">Feedback</a>
+            </p>
+            <p class="footer-bot-name">Movie Rover © 2024</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Studentská 201</span>Parbdubice, Czechia</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+420.773.276.393</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:dancho.rancho07@gmail.com">dancho.rancho07@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-devs-about">
+                <span>About Developers</span>
+                These people are workaholics who try to always stay in touch with the latest technologies and trends in the IT industry. They are always ready to help you with any type of questions you may have.
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/vance7187?locale=cs_CZ" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/vance_7187" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/daniyar-amirov-103467227" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mirroxEkb14" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/app.js"></script>
+</body>
+</html>

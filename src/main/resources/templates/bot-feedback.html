@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movie Rover Feedback</title>
+    <link href="/styles/bot-feedback.css" rel="stylesheet">
+</head>
+<body>
+    <div id="page-wrapper">
+        <div class="section-top">
+            <!-- header -->
+            <header>
+                <a th:href="@{/bot-feedback}" class="page-title">Sharing Your Experience</a>
+                <div class="navigation">
+                    <div class="navigation-items">
+                        <a th:href="@{/}">Home</a>
+                        <a th:href="@{/} + '#footer'">Contacts</a>
+                        <a href="https://t.me/MovieRoverBot" target="_black">Try</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- main content -->
+        <section class="home">
+            <h1>Each Your Letter is Read</h1>
+            <p>Please share your thoughts and suggestions with us. It helps in bot's improvements!</p>
+            <form class="feedback-form" action="/submitFeedback" method="post" enctype="multipart/form-data" autocomplete="off" onsubmit="showSnackbar(event)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Feedback</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- snackbar -->
+    <div id="snackbar">Thank you for your feedback!</div>
+
+    <script src="/scripts/bot-feedback.js"></script>
+</body>
+</html>

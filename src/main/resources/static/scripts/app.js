@@ -48,6 +48,16 @@ function showSlider(type){
         next.click();
     }, timeAutoNext)
 }
+/* checks if the 'signedUp' parameter is present*/
+document.addEventListener('DOMContentLoaded', (event) => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const signedUp = urlParams.get('signedUp');
+
+    if (signedUp && signedUp === 'true') {
+        document.getElementById('signup-text').textContent = 'Signed up!';
+        document.getElementById('profile-image').src = '/assets/account-icon-signedup.jpeg';
+    }
+});
 /* 'DOMContentLoaded' event listener */
 document.addEventListener('DOMContentLoaded', () => {
     // redirection logic for "TRY OUT" buttons

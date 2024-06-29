@@ -26,6 +26,6 @@ public class SignupController {
         final Signup signup = new Signup(username, email, password, LocalDateTime.now());
         signupService.saveSignup(signup);
 
-        return "redirect:/";
+        return "redirect:/?signedUp=true";
     }
 }

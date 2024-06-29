@@ -22,4 +22,7 @@ public class IndexController {
 
     @GetMapping("/bot-feedback")
     public String botFeedback() { return "bot-feedback"; }
+
+    @GetMapping("/signup")
+    public String signup() { return "signup"; }
 }

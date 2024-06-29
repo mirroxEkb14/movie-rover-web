@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rover - Sign Up</title>
+    <link href="/styles/signup.css" rel="stylesheet">
+</head>
+<body>
+    <div id="page-wrapper">
+        <div class="section-top">
+            <!-- header -->
+            <header>
+                <a th:href="@{/signup}" class="page-title">Joining to Our Community</a>
+                <div class="navigation">
+                    <div class="navigation-items">
+                        <a th:href="@{/}">Home</a>
+                        <a th:href="@{/} + '#footer'">Contacts</a>
+                        <a href="https://t.me/MovieRoverBot" target="_black">Try</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- main content -->
+        <section class="home">
+            <form class="signup-form" action="/submitSignup" method="post" enctype="multipart/form-data" autocomplete="off">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

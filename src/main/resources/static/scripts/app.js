@@ -50,7 +50,7 @@ function showSlider(type){
 }
 /* 'DOMContentLoaded' event listener */
 document.addEventListener('DOMContentLoaded', () => {
-    //redirection logic for "TRY OUT" buttons
+    // redirection logic for "TRY OUT" buttons
     const tryOutButtons = document.querySelectorAll('.btn-try-out');
     tryOutButtons.forEach(button => {
         button.addEventListener('click', () => {

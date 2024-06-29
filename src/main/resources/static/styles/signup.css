@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* settings applied to everything */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* background image */
+body{
+    background: url('/assets/signup-img-bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+/* page wrapper */
+#page-wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    padding-top: 80px;
+}
+/* header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    z-index: 1000;
+}
+header .page-title{
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+header .page-title:hover{
+    background: #ffcc00;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header .page-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #ffcc00;
+    transition: width 0.3s ease-in-out;
+}
+header .page-title:hover:after{
+    width: 100%;
+}
+.navigation{
+    display: flex;
+}
+.navigation-items a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.navigation-items a:hover{
+    color: #ffcc00;
+}
+/* signup form */
+.signup-form{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.signup-form h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.form-group{
+    margin-bottom: 20px;
+    width: 400px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    color: #ff9900;
+    font-weight: 600;
+}
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover{
+    background: #ff9900;
+}
